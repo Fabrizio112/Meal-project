@@ -1,0 +1,21 @@
+header {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/cooking.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    div {
+        aside {
+            div {
+                width: 90%;
+            }
+
+            button {
+                width: 10%;
+            }
+        }
+    }
+}
