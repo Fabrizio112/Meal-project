@@ -18,7 +18,7 @@ Api utilizada en este proyecto:
 - [MealApi](https://www.themealdb.com/api.php)
 
 
-Bueno ,primero que nada organice la aplicacion en diferentes rutas/paginas/vistas , la primera de todas llamda **_"Home"_**. Realice diferentes componentes para esta vista : "Navbar" ,"Header" sin la funcion de la barra de busqueda, "Categorias" y "Search Results" pero esto lo desarrollare un poco mas adelante 
+Bueno ,primero que nada organice la aplicacion en diferentes rutas/paginas/vistas , la primera de todas llamda **_"Home"_**. Realice diferentes componentes para esta vista : "Navbar" ,"Header" sin la funcion de la barra de busqueda, "Categorias" y "Search Results" pero esto lo desarrollare un poco mas adelante .
 
 Cree un contexto para manejar el estado general de la aplicacion. El primer desafio fue obtener las diferentes categorias, para eso creé un estado llamado **_"categories"_** y con un efecto realice una peticion fetch a la api en el "endpoint" (www.themealdb.com/api/json/v1/1/categories.php) y con los resultados que trajo se completo el estado.Al estar lleno el estado renderice el componente **_"Categories"_** y llene la barra de navegacion lateral.
 
@@ -30,7 +30,7 @@ En la segunda vista/pagina/ruta , el usuario puede ver mas informacion sobre cad
 
 Cree un estado llamado **_"meal"_** que se llena cuando el usuario hace click en "ver mas", por que la aplicacion realiza una peticion fetch a la api econ el nombre de la comida , en el endpoint ("www.themealdb.com/api/json/v1/1/search.php?s=").
 
-En la tercer ruta/vista/pagina , el usuario puede ver la informacion detallada de la comida seleccionada
+En la tercer ruta/vista/pagina , el usuario puede ver la informacion detallada de la comida seleccionada.
 
 Retrocediendo un poco ,en la primera vista, cuando finalice lo anterior mencionado ,termine la barra de busqueda. Realice un estado para manejar la informacion contenida dentro de la barra de busqueda y a este estado lo llame **_"search"_** y con la informacion de este estado , cuando el usuario hace click en el boton de busqueda, se realiza una peticion fetch al endpoint ("www.themealdb.com/api/json/v1/1/search.php?s=")  y con los resultados se almacenan en un estado llamado **_"searchResults"_**
 
